@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Uenr Engineering Students</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="School Logo">
+                <div class="logo-text">
+                    <h1>Uenr Engineering Students</h1>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li id="dashboard-link"><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" style="display:none;" onclick="window.location.href='login.html'">Login</button>
+                <button id="logout-btn" class="btn btn-outline" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h2>Student Dashboard</h2>
+        <div class="card-container">
+            <div class="card dashboard-card">
+                <h3>Welcome, <span id="student-name">Anthony Agyekum</span></h3>
+                <p>Here you can view your academic information and make dues payments.</p>
+            </div>
+            <div class="card">
+                <h3>Academic Information</h3>
+                <p><strong>Course:</strong> Computer Engineering</p>
+                <p><strong>GPA:</strong> 3.46</p>
+                <p><strong>Level:</strong> 200</p>
+            </div>
+            <div class="card">
+                <h3>Fee Payment</h3>
+                <div class="fee-status">
+                    <span>Engineering Dues:</span>
+                    <span class="pending">GHs 50 (Pending)</span>
+                </div>
+                <div class="fee-status">
+                    <span>Robotic Club Dues:</span>
+                    <span class="paid">GHs 100 (Paid)</span>
+                </div>
+                <button class="btn" onclick="window.location.href='payment.html'">Pay Fees</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2012 Uenr Engineering Students. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

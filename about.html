@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Uenr Engineering Students</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="School Logo">
+                <div class="logo-text">
+                    <h1>Uenr Engineering Students</h1>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li id="dashboard-link" style="display:none;"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" onclick="window.location.href='login.html'">Login</button>
+                <button id="logout-btn" class="btn btn-outline" style="display:none;" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h2>About Our Community</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Our History</h3>
+                <p>Founded in 2013, Uenr Engineering students community on campus has been serving the students for over 10 years with quality education and career goals opportunities after graduating.</p>
+            </div>
+            <div class="card">
+                <h3>Our Facilities</h3>
+                <p>Modern classrooms, science labs, library, and sports facilities to support student development.</p>
+            </div>
+            <div class="card">
+                <h3>Our Lecturers</h3>
+                <p>Highly qualified and dedicated community lecturers to student success.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2012 Uenr Engineering Students. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

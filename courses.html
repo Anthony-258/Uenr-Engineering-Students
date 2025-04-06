@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Uenr Engineering Students</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="School Logo">
+                <div class="logo-text">
+                    <h1>Uenr Engineering Students</h1>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link active">Courses</a></li>
+                    <li id="dashboard-link" style="display:none;"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" onclick="window.location.href='login.html'">Login</button>
+                <button id="logout-btn" class="btn btn-outline" style="display:none;" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h2>Our Programs</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Robotics</h3>
+                <p>The robotics clubs trains engineering students who want to be in the manufacturing industury.</p>
+                <a href="#" class="btn">Details</a>
+            </div>
+            <div class="card">
+                <h3>Coding</h3>
+                <p>The coding clubs trains engineering students to learn programming languages like python, html, C++ etc.</p>
+                <a href="#" class="btn">Details</a>
+            </div>
+            <div class="card">
+                <h3>Internships</h3>
+                <p>The internship placement help place student in career goals field to equip them with the necessary skills for the future.</p>
+                <a href="#" class="btn">Details</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2012 Uenr Engineering Students. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
